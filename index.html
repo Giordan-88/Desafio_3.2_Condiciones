@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="img-border">
+        <img id="imgborder" src="./assets/img/playa.jpg" alt="">
+    </div>
+
+    <!-- Imagenes de Bichos -->
+
+    <div class="bichos">
+
+        <h2>Puedes elegir hasta 10 bichos en total</h2>
+
+        <div class="bichos-centro">
+
+            <div class="bichos-img">
+                <img src="./assets/img/Mariposa.webp" alt="">
+                <input id="bichoA" type="number" min="0">
+            </div>
+            <div class="bichos-img">
+                <img src="./assets/img/Escarabajo.webp" alt="">
+                <input id="bichoB" type="number" min="0">
+            </div>
+            <div class="bichos-img">
+                <img src="./assets/img/Mariquita.webp" alt="">
+                <input id="bichoC" type="number" min="0">
+            </div>
+        </div>
+        <p id="mensaje"></p>
+        <p>Items Seleccionados <span id="conteo"></span></p>
+        <button onclick="verificar()">Verificar</button>
+    </div>
+
+
+    <!-- Tabla de Pasword-->
+    <div class="cuadro">
+        <div class="password">
+            <h2>Ingresa el password</h2>
+            <div class="numbers">
+                <select name="p1" id="p1">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="p2" id="p2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select name="p3" id="p3">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <p id="pass"></p>
+            <button onclick="verificarP()">Ingresar</button>
+
+        </div>
+
+    </div>
+
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
